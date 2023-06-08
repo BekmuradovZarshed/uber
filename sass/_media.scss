@@ -1,0 +1,407 @@
+// [1200 - 992]; [991 - 768]; [767 - 576]; [575 - 320];
+
+@media (max-width: 1200px) {
+    .subheader {
+        .subheader_items {
+            .subheader_call {
+                .call_descr {
+                    font-size: 11px;
+                }
+                .call_number {
+                    font-size: 17px;
+                }
+            }
+            .subheader_btn {
+                font-size: 13px;
+            }
+        }
+    }
+    .reasons {
+        .reasons_items {
+            .reasons_content {
+                .reasons_item {
+                    .item_text {
+                        .item_descr {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile {
+        .mobile_items {
+            .mobile_content {
+                min-height: 900px;
+            }
+        }
+    }
+    .footer {
+        .footer_items {
+            flex-direction: column;
+            .footer_social {
+                position: static;
+                order: 1;
+                margin-top: 10px;
+            }
+            .footer_links {
+                position: static;
+                margin-top: 10px;
+                order: 2;
+            }
+            .footer_text {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .header {
+        .header_items {
+            .header_menu {
+                li {
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .subheader {
+        .subheader_items {
+            .subheader_logo {
+                a {
+                    display: block;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .logo_descr {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .promo {
+        .promo_items {
+            .promo_title {
+                font-size: 49px;
+            }
+            .promo_subtitle {
+                font-size: 29px;
+            }
+            .promo_descr {
+                font-size: 15px;
+            }
+        }
+    }
+    .mobile {
+        .mobile_items {
+            .mobile_content {
+                .card {
+                    .card_title {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .car {
+        .car_dark {
+            .dark_items {
+                .car_img {
+                    width: 660px;
+                }
+            }
+        }
+    }
+    .rules {
+        .rules_items {
+            .rules_blue {
+                flex-direction: column;
+                .rules_blue-right {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        .header_items {
+            .header_menu {
+                position: fixed;
+                flex-direction: column;
+                height: 100vh;
+                width: 50%;
+                left: -200%;
+                background-color: rgba(0,0,0, .7);
+                transition: 0.4s all;
+                li {
+                    padding: 5px 0;
+                    border: none;
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .header_menu-active {
+                left: 0;
+                transition: 0.4s all;
+            }
+            .hamburger {
+                display: flex;
+                height: 35px;
+                width: 50px;
+                // border: 1px solid #fff;
+                position: absolute;
+                right: 15px;
+                top: 10px;
+                cursor: pointer;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 7px 0;
+                .line {
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #fff;
+                    // margin: 3px 0;
+                }
+            }
+            .hamburger-active {
+                justify-content: center;
+                padding-top: 15px;
+                transform: 0.3s all;
+                .line {
+                    transition: 0.3s all;
+                    &:first-child {
+                        transform: rotate(48deg) translateY(1px);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:last-child {
+                        transform: rotate(-50deg) translateY(-1px);
+                    }
+                }
+            }
+        }
+    }
+    .subheader {
+        .subheader_items {
+            .subheader_call {
+                .call_descr {
+                    font-size: 8px;
+                }
+                .call_number {
+                    font-size: 13px;
+                }
+            }
+            .subheader_btn {
+                font-size: 10px;
+            }
+        }
+    }
+    .promo {
+        .promo_items {
+            .promo_title {
+                font-size: 36px;
+            }
+            .promo_subtitle {
+                font-size: 21px;
+            }
+        }
+    }
+    .reasons {
+        .reasons_items {
+            .reasons_content {
+                .reasons_item {
+                    .item_text {
+                        .item_title {
+                            font-size: 14px;
+                        }
+                        .item_descr {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile {
+        .mobile_items {
+            .mobile_content {
+                min-height: 1800px;
+            }
+        }
+    }
+    .car {
+        min-height: 500px;
+        .car_dark {
+            .dark_items {
+                .car_img {
+                    margin-top: 20px;
+                    height: 300px;
+                    width: 500px;
+                }
+            }
+        }
+        .car_light {
+            display: none;
+        }
+    }
+    .rules {
+        .rules_items {
+            .rules_red {
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        .header_items {
+            .header_menu {
+                li {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .subheader {
+        .subheader_items {
+            .subheader_logo {
+                padding-left: 0;
+                a {
+                    display: block;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .logo_descr {
+                    display: none;
+                }
+            }
+            .subheader_call {
+                display: none;
+            }
+            .subheader_btn {
+                display: none;
+            }
+            .subheader_small_items {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                .subheader_call {
+                    display: block;
+                    font-size: 12px;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: right;
+                }
+                .subheader_btn {
+                    width: 110px;
+                    height: 22px;
+                    font-size: 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+    .promo {
+        min-height: 455px;
+        .promo_items {
+            min-height: 455px;
+            .promo_title {
+                font-size: 33px;
+            }
+            .promo_subtitle {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .promo_descr {
+                display: none;
+            }
+        }
+    }
+    .reasons {
+        .reasons_items {
+            .reasons_title {
+                margin-top: 18px;
+            }
+            .reasons_content {
+                .reasons_item {
+                    min-height: 280px;
+                    flex-direction: column;
+                    align-items: center;
+                    .item_round {
+                        width: 116px;
+                        height: 116px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .car {
+        .car_dark {
+            height: 370px;
+            .dark_items {
+                height: 370px;
+                .car_img {
+                    height: 170px;
+                    width: 280px;
+                }
+            }
+        }
+    }
+    .rules {
+        .rules_items {
+            .rules_blue {
+                .rules_blue_title {
+                    font-size: 15px;
+                }
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+                .rules_blue_descr {
+                    font-size: 12px;
+                }
+            }
+            .rules_red {
+                .rules_red_title {
+                    font-size: 15px;
+                }
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .footer_items {
+            .footer_text {
+                width: 270px;
+                .text_top {
+                    a {
+                        font-size: 12px;
+                    }
+                }
+                .text_bottom {
+                    a {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
